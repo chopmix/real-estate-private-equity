@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- States in the listing and README that new workbooks carry a one-line author credit on the Sources sheet, and that it can be deleted
+- The skill now tells the user the credit line is there
+
 ## 0.1.0
 
 First release.

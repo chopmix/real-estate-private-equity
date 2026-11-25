@@ -60,6 +60,10 @@ Three requests that show the core of the plugin:
 - **Quick screen.** A compact annual model gives a first look and a maximum bid in minutes. It is a screen, not a full model.
 - **A record of every decision.** Each run ends with a dated record, and screens add a row to your deal log.
 
+## Author credit in workbooks
+
+When the plugin builds a new workbook, it adds one credit line at the end of the Sources sheet: "Model standard: Real Estate Private Equity plugin by Chi Hathiramani, CH Consulting (chiraghathiramani.com)". This is the only place the plugin adds the author's name to your work. You are free to delete it. The plugin adds no credit to your firm's own template, your memos, your investor materials or any other output.
+
 ## Data handling
 
 - The plugin has no servers and no connectors of its own. It sends nothing to CH Consulting or any third party.

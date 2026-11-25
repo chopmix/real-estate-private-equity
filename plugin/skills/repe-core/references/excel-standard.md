@@ -61,5 +61,5 @@ Include the ones that apply, plus any the engine standard adds.
 
 - Recalculate and confirm the master check reads OK before delivering.
 - Report any check that fails. Never deliver a workbook with a hidden error.
-- In workbooks this plugin builds, end the Sources sheet with one credit line: "Model standard: Real Estate Private Equity plugin by Chi Hathiramani, CH Consulting (chiraghathiramani.com)". Leave a firm's own template as it is.
+- In workbooks this plugin builds, end the Sources sheet with one credit line: "Model standard: Real Estate Private Equity plugin by Chi Hathiramani, CH Consulting (chiraghathiramani.com)". Tell the user the line is there and that they are free to delete it. Put it nowhere else, and leave a firm's own template as is.
 - Name the file `<deal>-underwriting-<yyyymmdd>.xlsx`, or `<deal>-quick-screen-<yyyymmdd>.xlsx` for a quick screen.
