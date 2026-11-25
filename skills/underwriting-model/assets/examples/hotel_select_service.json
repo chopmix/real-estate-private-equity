@@ -1,0 +1,46 @@
+{
+  "deal_name": "Fictional Riverbend Select Service Hotel",
+  "property_type": "hotel",
+  "engine": "operating",
+  "scenario": "Base",
+  "hold_years": 6,
+  "acquisition": {"purchase_price": 19000000, "closing_cost_pct": 0.02, "upfront_capex": 1200000, "trailing_noi": 1550000},
+  "assumptions": {
+    "rent_growth": [0.03, 0.04, 0.01],
+    "expense_growth": [0.03, 0.025, 0.04],
+    "exit_cap": [0.085, 0.08, 0.095],
+    "occupancy_adjustment": [0.0, 0.02, -0.05],
+    "sale_cost_pct": 0.025
+  },
+  "operating": {
+    "keys": 120,
+    "rate": 135,
+    "rate_basis": "day",
+    "occupancy": [0.70, 0.73, 0.75, 0.76],
+    "other_revenue_pct": 0.08,
+    "departmental_expense_pct": 0.25,
+    "undistributed_expense_pct": 0.27,
+    "ffe_reserve_pct": 0.04
+  },
+  "expenses": {
+    "items": [
+      {"name": "Franchise fees (fixed portion)", "amount": 60000}
+    ],
+    "management_fee_pct": 0.03,
+    "property_tax": {"reassess": false, "current_tax": 240000, "assessment_ratio": 1.0, "tax_rate": 0.0},
+    "insurance": 120000,
+    "capex_schedule": [0, 0, 0, 400000]
+  },
+  "debt": {"mode": "sized", "max_ltv": 0.6, "min_dscr": 1.5, "min_debt_yield": 0.11, "rate": 0.07, "io_years": 0, "amort_years": 25, "loan_fee_pct": 0.01},
+  "waterfall": {
+    "investor_share": 0.9, "pref_rate": 0.09,
+    "tiers": [{"hurdle": 0.13, "promote": 0.2}, {"hurdle": 0.16, "promote": 0.3}, {"hurdle": 0.2, "promote": 0.35}],
+    "final_promote": 0.45,
+    "acquisition_fee_pct": 0.0075, "asset_management_fee_pct": 0.01, "disposition_fee_pct": 0.0
+  },
+  "returns": {"hurdle_irr": 0.16},
+  "source_tags": {"exit_cap": "[Assumed]", "occupancy_adjustment": "[Assumed]"},
+  "sources": [
+    {"document": "Synthetic STR-style trailing report (fictional example)", "type": "[User]", "date": "2026-03-10", "note": "Invented for testing"}
+  ]
+}

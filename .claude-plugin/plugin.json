@@ -1,0 +1,13 @@
+{
+  "name": "real-estate-private-equity",
+  "displayName": "Real Estate Private Equity by CH Consulting",
+  "version": "0.1.0",
+  "description": "Real estate private equity workflows for every major property type: sourcing, screening, rent roll and T-12 analysis, market intelligence, live Excel underwriting, waterfalls, diligence, IC memos, asset management, liquidity, financing decisions and decision briefs.",
+  "author": {
+    "name": "Chi Hathiramani, CH Consulting",
+    "url": "https://chiraghathiramani.com"
+  },
+  "homepage": "https://chiraghathiramani.com",
+  "license": "Apache-2.0",
+  "keywords": ["real estate", "private equity", "underwriting", "asset management", "commercial real estate"]
+}

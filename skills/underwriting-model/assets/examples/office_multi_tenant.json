@@ -1,0 +1,54 @@
+{
+  "deal_name": "Fictional Cedar Point Office",
+  "property_type": "office",
+  "engine": "lease",
+  "scenario": "Base",
+  "hold_years": 7,
+  "acquisition": {"purchase_price": 24000000, "closing_cost_pct": 0.015, "upfront_capex": 750000, "trailing_noi": 2050000},
+  "assumptions": {
+    "rent_growth": [0.025, 0.035, 0.01],
+    "expense_growth": [0.03, 0.025, 0.035],
+    "exit_cap": [0.08, 0.075, 0.0875],
+    "vacancy": [0.03, 0.02, 0.06],
+    "sale_cost_pct": 0.02
+  },
+  "lease": {
+    "tenants": [
+      {"name": "Tenant A (fictional)", "sf": 30000, "rent_psf": 27.0, "annual_bump": 0.025, "expiry_year": 3, "renewal_probability": 0.7, "downtime_months": 9, "market_rent_psf": 28.0, "ti_new_psf": 40, "ti_renewal_psf": 15, "lc_new_psf": 8, "lc_renewal_psf": 4, "recovery_psf": 3.0},
+      {"name": "Tenant B (fictional)", "sf": 22000, "rent_psf": 29.0, "annual_bump": 0.03, "expiry_year": 6, "renewal_probability": 0.65, "downtime_months": 8, "market_rent_psf": 28.5, "ti_new_psf": 40, "ti_renewal_psf": 15, "lc_new_psf": 8, "lc_renewal_psf": 4, "recovery_psf": 3.0},
+      {"name": "Tenant C (fictional)", "sf": 18000, "rent_psf": 26.0, "annual_bump": 0.025, "expiry_year": 2, "renewal_probability": 0.6, "downtime_months": 6, "market_rent_psf": 28.0, "ti_new_psf": 35, "ti_renewal_psf": 12, "lc_new_psf": 7, "lc_renewal_psf": 3.5, "recovery_psf": 2.5},
+      {"name": "Tenant D (fictional)", "sf": 15000, "rent_psf": 30.0, "annual_bump": 0.03, "expiry_year": 9, "renewal_probability": 0.7, "downtime_months": 9, "market_rent_psf": 29.0, "ti_new_psf": 40, "ti_renewal_psf": 15, "lc_new_psf": 8, "lc_renewal_psf": 4, "recovery_psf": 3.0},
+      {"name": "Tenant E (fictional)", "sf": 12000, "rent_psf": 25.5, "annual_bump": 0.02, "expiry_year": 4, "renewal_probability": 0.75, "downtime_months": 6, "market_rent_psf": 27.5, "ti_new_psf": 35, "ti_renewal_psf": 12, "lc_new_psf": 7, "lc_renewal_psf": 3.5, "recovery_psf": 2.5},
+      {"name": "Tenant F (fictional)", "sf": 8000, "rent_psf": 28.0, "annual_bump": 0.03, "expiry_year": 12, "renewal_probability": 0.7, "downtime_months": 6, "market_rent_psf": 28.0, "ti_new_psf": 35, "ti_renewal_psf": 12, "lc_new_psf": 7, "lc_renewal_psf": 3.5, "recovery_psf": 2.5}
+    ],
+    "vacant_suites": [
+      {"name": "Suite 400 (vacant)", "sf": 15000, "market_rent_psf": 27.0, "lease_up_year": 2, "annual_bump": 0.03, "ti_new_psf": 45, "lc_new_psf": 8, "recovery_psf": 3.0}
+    ],
+    "other_income": 60000
+  },
+  "expenses": {
+    "items": [
+      {"name": "Repairs and maintenance", "amount": 260000},
+      {"name": "Janitorial", "amount": 180000},
+      {"name": "Utilities", "amount": 300000},
+      {"name": "General and administrative", "amount": 90000}
+    ],
+    "management_fee_pct": 0.03,
+    "property_tax": {"reassess": true, "current_tax": 380000, "assessment_ratio": 0.85, "tax_rate": 0.02},
+    "insurance": 110000,
+    "replacement_reserves": 30000,
+    "capex_schedule": [200000, 100000]
+  },
+  "debt": {"mode": "sized", "max_ltv": 0.6, "min_dscr": 1.35, "min_debt_yield": 0.1, "rate": 0.0625, "io_years": 1, "amort_years": 25, "loan_fee_pct": 0.0075},
+  "waterfall": {
+    "investor_share": 0.95, "pref_rate": 0.08,
+    "tiers": [{"hurdle": 0.13, "promote": 0.2}],
+    "final_promote": 0.3,
+    "acquisition_fee_pct": 0.01, "asset_management_fee_pct": 0.0125, "disposition_fee_pct": 0.005
+  },
+  "returns": {"hurdle_irr": 0.14},
+  "source_tags": {"exit_cap": "[Assumed]", "vacancy": "[Assumed]"},
+  "sources": [
+    {"document": "Synthetic lease abstract (fictional example)", "type": "[User]", "date": "2026-02-01", "note": "Invented for testing"}
+  ]
+}

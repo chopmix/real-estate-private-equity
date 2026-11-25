@@ -1,0 +1,52 @@
+{
+  "deal_name": "Fictional Maple Run Apartments",
+  "property_type": "multifamily",
+  "engine": "unit",
+  "scenario": "Base",
+  "hold_years": 5,
+  "acquisition": {"purchase_price": 32000000, "closing_cost_pct": 0.015, "upfront_capex": 500000, "trailing_noi": 1850000},
+  "assumptions": {
+    "rent_growth": [0.03, 0.04, 0.015],
+    "expense_growth": [0.03, 0.025, 0.04],
+    "exit_cap": [0.0575, 0.055, 0.0625],
+    "vacancy": [0.05, 0.04, 0.08],
+    "sale_cost_pct": 0.02
+  },
+  "unit": {
+    "unit_mix": [
+      {"type": "1BR Classic", "count": 100, "sf": 700, "in_place_rent": 1150, "market_rent": 1250, "renovation_premium": 150, "renovations_per_year": 25, "renovation_cost_per_unit": 12000},
+      {"type": "2BR Classic", "count": 100, "sf": 1000, "in_place_rent": 1450, "market_rent": 1550, "renovation_premium": 175, "renovations_per_year": 25, "renovation_cost_per_unit": 14000}
+    ],
+    "concessions_pct": 0.01,
+    "bad_debt_pct": 0.01,
+    "other_income": 180000,
+    "loss_to_lease_burnoff_years": 2
+  },
+  "expenses": {
+    "items": [
+      {"name": "Payroll", "amount": 300000},
+      {"name": "Repairs and maintenance", "amount": 160000},
+      {"name": "Utilities", "amount": 200000},
+      {"name": "Administrative and marketing", "amount": 80000},
+      {"name": "Contract services", "amount": 60000, "growth": 0.035}
+    ],
+    "management_fee_pct": 0.03,
+    "property_tax": {"reassess": true, "current_tax": 420000, "assessment_ratio": 0.8, "tax_rate": 0.018},
+    "insurance": 140000,
+    "replacement_reserves": 50000,
+    "capex_schedule": [150000, 100000, 50000]
+  },
+  "debt": {"mode": "sized", "max_ltv": 0.65, "min_dscr": 1.25, "min_debt_yield": 0.08, "rate": 0.06, "io_years": 2, "amort_years": 30, "loan_fee_pct": 0.01},
+  "waterfall": {
+    "investor_share": 0.9, "pref_rate": 0.08,
+    "tiers": [{"hurdle": 0.12, "promote": 0.2}, {"hurdle": 0.15, "promote": 0.3}],
+    "final_promote": 0.4,
+    "acquisition_fee_pct": 0.01, "asset_management_fee_pct": 0.015, "disposition_fee_pct": 0.005
+  },
+  "returns": {"hurdle_irr": 0.15},
+  "source_tags": {"exit_cap": "[Assumed]", "rent_growth": "[Assumed]", "expense_growth": "[Assumed]", "sale_cost_pct": "[Assumed]"},
+  "sources": [
+    {"document": "Synthetic rent roll (fictional example)", "type": "[User]", "date": "2026-01-15", "note": "Invented for testing"},
+    {"document": "Synthetic T-12 operating statement (fictional example)", "type": "[User]", "date": "2026-01-15", "note": "Invented for testing"}
+  ]
+}
