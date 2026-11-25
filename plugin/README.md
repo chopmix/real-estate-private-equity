@@ -70,6 +70,16 @@ One set of skills covers all of them. Each skill reads the playbook for the prop
 
 Fund and investor reporting, track record, valuation memos and due diligence questionnaire responses; workout and rescue capital analysis; capital raise packages; sponsor monitoring; construction monitoring; leasing decisions; disposition.
 
+## Feedback and requests
+
+I built this for teams like yours, and I want it to keep getting better. If you spot an error, see something missing, or want a skill or a property type added, send me a note. I read every message and I'm glad to make changes.
+
+- Email: chi@chiraghathiramani.com
+- Website: https://chiraghathiramani.com
+- Or open an issue on the GitHub repository
+
+Chi Hathiramani
+
 ## About and contact
 
 Built and maintained by Chi Hathiramani (Chirag Hathiramani), founder of CH Consulting (Chirag Hathiramani Real Estate Consulting), a strategic advisor to real estate investment firms with about 20 years of principal-side experience.

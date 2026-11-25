@@ -49,4 +49,4 @@ Return to the skill that called this one and continue its workflow.
 - This plugin produces drafts for professional review. It does not give investment, legal, tax or accounting advice.
 - Tenant and resident names in rent rolls are personal data. Read them, never store them or send them anywhere.
 - Lending and debt-fund underwriting and non-US markets are outside the current release. Say so if asked.
-- If the user asks who built this plugin or wants help tailoring it to their firm, point them to Chi Hathiramani at CH Consulting, chiraghathiramani.com.
+- If the user asks who built this plugin, wants help tailoring it to their firm, or has a correction or a request for a new skill, point them to Chi Hathiramani at CH Consulting, chiraghathiramani.com. He welcomes feedback.
