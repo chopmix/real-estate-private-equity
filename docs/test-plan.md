@@ -2,12 +2,14 @@
 
 ## Automated
 
+Run from the repository root. The tools sit outside the plugin folder.
+
 | Check | Command | Passes when |
 |-------|---------|-------------|
-| Repository rules | `python3 tests/lint_repo.py` | No errors against the directory's pre-submission rules |
-| Quick screening model | `python3 tests/test_engine.py` | All example deals build, recalculate and match the independent check |
-| Workbook auditor | `python3 tests/test_audit.py` | Clean workbook passes. Corrupted copies are caught |
-| Plugin format | `claude plugin validate .` | Validation passed |
+| Plugin rules | `python3 tools/tests/lint_repo.py` | No errors against the directory's pre-submission rules |
+| Plugin format | `claude plugin validate ./plugin` | Validation passed |
+| Reference quick screen | `python3 tools/tests/test_engine.py` | Example deals build, recalculate and match the independent check |
+| Reference auditor | `python3 tools/tests/test_audit.py` | Clean workbook passes. Corrupted copies are caught |
 
 ## By hand, before each release
 

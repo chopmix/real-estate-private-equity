@@ -161,13 +161,14 @@ Models keep improving, so the plugin sets the standard and checks the result. It
 |-------|-------|------|
 | Model standard | `skills/underwriting-model/references/` | What an institutional-grade model must prove, by engine. Outcomes and tests, not a layout |
 | Firm template path | `underwriting-model` skill | Fill the firm's own model and test it against the standard |
-| Auditor | `scripts/audit_workbook.py` | Mechanical tests on any workbook: errors, typed-over formulas, ties, independent return recompute |
-| Quick screening model | `scripts/repe_model.py` | Annual first-look workbook for screens and maximum bids. Not a full model |
+| Audit checklist | `references/audit-checklist.md` | Mechanical tests on any workbook: errors, typed-over formulas, ties, independent return recompute |
+| Quick screen standard | `references/quick-screen-standard.md` | Annual first-look workbook for screens and maximum bids. Not a full model |
 
 Engine standards: unit-based, lease-by-lease, operating, development, for-sale, plus a waterfall standard in `jv-waterfall`.
 
 ## Publishing
 
-- Plugin folder is the repository root. Text files only. No binaries.
+- The plugin lives in the `plugin/` folder of the repository and holds only Markdown, JSON and the icon. Anthropic's directory accepts code only from Verified organizations.
+- Development tools (a reference quick screening model, a workbook auditor and tests) live in `tools/`, outside the plugin.
 - Plugin name `real-estate-private-equity`, mirroring Anthropic's `private-equity`. The name is permanent once submitted. If review holds it as too generic, the fallback is `ch-real-estate-private-equity`.
 - Submit from the CH Consulting Claude account at claude.ai/directory/manage.

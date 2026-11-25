@@ -8,8 +8,8 @@ import sys
 import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCRIPTS = os.path.join(ROOT, "skills", "underwriting-model", "scripts")
-DEAL = os.path.join(ROOT, "skills", "underwriting-model", "assets", "examples", "multifamily_value_add.json")
+SCRIPTS = os.path.join(ROOT, "quick-screen")
+DEAL = os.path.join(ROOT, "quick-screen", "examples", "multifamily_value_add.json")
 sys.path.insert(0, SCRIPTS)
 
 from openpyxl import load_workbook  # noqa: E402

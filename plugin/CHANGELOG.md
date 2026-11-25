@@ -9,5 +9,5 @@ First release.
 - Ownership: asset business plan, asset management review, platform AI readiness
 - Capital and oversight: liquidity and capital needs, financing decisions, decision brief
 - Model standards for unit-based, lease-by-lease, operating, development and for-sale properties, plus a waterfall standard
-- Workbook auditor that tests any model, including a firm's own template
-- Quick screening model with live Excel formulas for first looks and maximum bids
+- Workbook audit checklist that applies to any model, including a firm's own template
+- Quick screen standard for first looks and maximum bids

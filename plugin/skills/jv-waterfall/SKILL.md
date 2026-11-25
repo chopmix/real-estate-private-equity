@@ -1,6 +1,6 @@
 ---
 name: jv-waterfall
-description: Models how deal cash splits between investors and the sponsor: preferred return, return of capital, hurdles and promote, catch-up, sponsor co-invest and fees, with gross and net investor returns. Works in the firm's own model or builds to the plugin's waterfall standard, then tests the result. Use when structuring or reviewing a joint venture, comparing sponsor terms, or explaining what the sponsor earns. Triggers on "model the waterfall", "promote", "LP net returns", "what does the GP make", or "pref and hurdles".
+description: Models how deal cash splits between investors and the sponsor, covering preferred return, return of capital, hurdles and promote, catch-up, sponsor co-invest and fees, with gross and net investor returns. Works in the firm's own model or builds to the plugin's waterfall standard, then tests the result. Use when structuring or reviewing a joint venture, comparing sponsor terms, or explaining what the sponsor earns. Triggers on "model the waterfall", "promote", "LP net returns", "what does the GP make", or "pref and hurdles".
 ---
 
 # JV Waterfall
@@ -37,10 +37,10 @@ Read `references/waterfall-standard.md`. It sets what a correct waterfall proves
 |------|----------|--------------|
 | Firm template | The firm's model already has a waterfall | Map the terms in. Keep its structure |
 | Build to standard | No template, or the terms do not fit one | Build the waterfall with live formulas, at the timing the agreement tests |
-| Quick screen | First look at sponsor economics | Use the quick screening model in `underwriting-model` |
+| Quick screen | First look at sponsor economics | Add a simple waterfall to the quick screen in `underwriting-model` |
 
 - Property cash flows come from the `underwriting-model` skill. Build or load them first.
-- The quick screening model handles a preferred return, return of capital and up to three IRR hurdles, annually. For catch-up, clawback, multiple classes or monthly tests, build to standard.
+- A quick screen can carry a preferred return, return of capital and IRR hurdles, annually. For catch-up, clawback, multiple classes or monthly tests, build to standard.
 
 ### Step 4: Test the Split
 

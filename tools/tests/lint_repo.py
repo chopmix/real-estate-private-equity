@@ -9,12 +9,12 @@ import os
 import re
 import sys
 
-ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), ".."))
+ROOT = os.path.abspath(sys.argv[1] if len(sys.argv) > 1 else os.path.join(os.path.dirname(__file__), "..", "..", "plugin"))
 MAX_FILE_BYTES = 256 * 1024
 MAX_FILES = 512
 SKILL_LINE_CAP = 130
 DESC_CAP = 600
-TEXT_EXT = {".md", ".json", ".py", ".txt", ".yml", ".yaml", ".csv", ""}
+TEXT_EXT = {".md", ".json", ".txt", ".yml", ".yaml", ""}  # community plugins may not ship code
 FORBIDDEN = {".DS_Store", "Thumbs.db", "desktop.ini", "__MACOSX"}
 
 errors, warnings = [], []

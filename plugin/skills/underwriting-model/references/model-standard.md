@@ -51,7 +51,7 @@ The engine standards in this folder add what each property type requires.
 |------|----------|------|
 | Firm template | The firm has its own model | Use it. Keep its structure and conventions. Map inputs in, complete it, and test it against this standard |
 | Build to standard | No template, and the decision needs a full model | Build a workbook that meets this standard and the engine standard. The method is open |
-| Quick screen | First look, triage, or maximum bid | Use the bundled quick screening model. Annual, fast, and labeled as a screen |
+| Quick screen | First look, triage, or maximum bid | Build to `quick-screen-standard.md`. Annual, fast, and labeled as a screen |
 
 When a firm's convention differs from this standard, the firm's convention wins. Record the difference as an observation for the reviewer. Do not change the template to fit.
 
@@ -68,7 +68,7 @@ When a firm's convention differs from this standard, the firm's convention wins.
 | Downside | The downside case still covers debt service and passes extension tests, or the shortfall is sized |
 | Reviewable | A person who did not build it can find the inputs, follow the logic, and see the checks |
 
-Run `scripts/audit_workbook.py` for the mechanical tests. The reasonableness and downside tests need judgment.
+`audit-checklist.md` covers the mechanical tests. The reasonableness and downside tests need judgment.
 
 ## 6. Where models go wrong
 

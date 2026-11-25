@@ -9,8 +9,8 @@ import sys
 import tempfile
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCRIPTS = os.path.join(ROOT, "skills", "underwriting-model", "scripts")
-EXAMPLES = os.path.join(ROOT, "skills", "underwriting-model", "assets", "examples")
+SCRIPTS = os.path.join(ROOT, "quick-screen")
+EXAMPLES = os.path.join(ROOT, "quick-screen", "examples")
 sys.path.insert(0, SCRIPTS)
 
 import repe_model  # noqa: E402

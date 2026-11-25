@@ -16,7 +16,7 @@ Identify the property type and read its playbook in `references/playbooks/`.
 |------|----------|--------------|
 | Firm template | The user provides or has a model template | Fill it. Keep its structure and conventions |
 | Build to standard | No template, and the decision needs a full model | Build a workbook that meets the model standard |
-| Quick screen | First look, triage or maximum bid | Run the bundled quick screening model |
+| Quick screen | First look, triage or maximum bid | Build a compact annual workbook to the quick screen standard |
 
 Check for a template first. If none is attached, ask once whether the firm has one.
 
@@ -47,19 +47,14 @@ The standards describe outcomes and tests. The method is yours to choose.
 - Include every item under "Required content" in the model standard that the decision needs.
 
 **Quick screen**
-- Write a deal file using `assets/deal-input-schema.md`, starting from the closest file in `assets/examples/`.
-- Run `python3 ${CLAUDE_SKILL_DIR}/scripts/repe_model.py deal.json <deal>-quick-screen-<yyyymmdd>.xlsx`.
+- Follow `references/quick-screen-standard.md`. Save as `<deal>-quick-screen-<yyyymmdd>.xlsx`.
 - Fill gaps from the buy box and tag each one `[Assumed]`.
 
 For raw documents, run `rent-roll-t12-analysis` first. Use placeholders for tenant names.
 
 ### Step 4: Audit the Workbook
 
-Run the mechanical audit on any workbook, including a firm's own:
-
-`python3 ${CLAUDE_SKILL_DIR}/scripts/audit_workbook.py <file>.xlsx --irr "<cash flow range>=<reported cell>" --checks "<check cell>"`
-
-For the quick screening model, also run `python3 ${CLAUDE_SKILL_DIR}/scripts/validate_model.py deal.json <file>.xlsx`.
+Run the mechanical audit in `references/audit-checklist.md` on any workbook, including a firm's own: error values, typed-over formulas, ties, check cells and an independent recompute of the headline returns.
 
 Then apply the judgment tests from the model standard:
 
@@ -95,7 +90,7 @@ For the investor split, load `jv-waterfall`.
 
 - A firm's own model carries its history and its investors' expectations. Fill it and test it. Do not improve it uninvited.
 - The standard sets what a good model proves, not how it is laid out. Choose the simplest build that proves it.
-- The quick screening model is annual and built for speed. Never present its result as a bid or a committee number.
+- A quick screen is annual and built for speed. Never present its result as a bid or a committee number.
 - When exit cap rate movement supplies most of the profit, say so plainly. The deal then depends on the market more than on the plan.
 - A model that ties can still be wrong. The reasonableness and downside tests matter more than the mechanical ones.
-- If the audit cannot recalculate the file, say so and ask the user to open it in Excel and confirm the checks.
+- If the workbook cannot be recalculated in this environment, say so and ask the user to open it in Excel and confirm the checks.
