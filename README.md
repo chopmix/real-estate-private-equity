@@ -1,6 +1,6 @@
 # Real Estate Private Equity for Claude
 
-If you run a real estate investment firm, this puts an experienced investor's process in your team's hands. Screen a deal in minutes, underwrite it in your own model, run diligence, write the IC memo and keep every asset on plan. It works across every major property type and is built for owner-operators, fund managers, developers, allocators and family offices.
+For acquisitions, asset management and capital teams at real estate investment firms. Screen a deal in minutes, underwrite it in your own model, run diligence, write the IC memo and keep every asset on plan. It covers every major property type and fits owner-operators, fund managers, developers, allocators and family offices.
 
 Created by Chi Hathiramani, CH Consulting. See [About and contact](#about-and-contact).
 
