@@ -1,6 +1,6 @@
 # Real Estate Private Equity for Claude
 
-Skills that take a real estate investment from first look to ownership: sourcing, screening, underwriting, diligence, investment committee, asset management and capital decisions. Built for owner-operators, fund managers, developers, allocators and family offices, across every major property type.
+If you run a real estate investment firm, this puts an experienced investor's process in your team's hands. Screen a deal in minutes, underwrite it in your own model, run diligence, write the IC memo and keep every asset on plan. It works across every major property type and is built for owner-operators, fund managers, developers, allocators and family offices.
 
 Created by Chi Hathiramani, CH Consulting. See [About and contact](#about-and-contact).
 
