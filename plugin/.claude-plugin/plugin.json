@@ -15,5 +15,9 @@
     "underwriting",
     "asset management",
     "commercial real estate"
-  ]
+  ],
+  "repository": "https://github.com/chopmix/real-estate-private-equity",
+  "privacyPolicyUrl": "https://github.com/chopmix/real-estate-private-equity/blob/main/plugin/PRIVACY.md",
+  "supportUrl": "https://github.com/chopmix/real-estate-private-equity/issues",
+  "documentationUrl": "https://github.com/chopmix/real-estate-private-equity/blob/main/plugin/README.md"
 }

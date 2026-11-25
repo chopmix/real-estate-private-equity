@@ -43,6 +43,14 @@ One set of skills covers all of them. Each skill reads the playbook for the prop
 2. Attach a document and ask in plain words: "screen this deal", "analyze this rent roll", "build the model", "write the IC memo", "review this month's package".
 3. In Claude Code and Cowork you can also use slash commands such as `/real-estate-private-equity:screen-deal` and `/real-estate-private-equity:underwrite`.
 
+## Examples
+
+Three requests that show the core of the plugin:
+
+1. Attach an offering memorandum and say: "Screen this deal against our buy box and give me a maximum bid."
+2. Attach a rent roll and a trailing 12-month statement and say: "Analyze these and show me the adjusted NOI."
+3. Attach your firm's model and the deal documents and say: "Fill in our underwriting model for this deal and audit it."
+
 ## How it works
 
 - **Your data first.** Skills work from the documents you provide, then systems you have connected, then public sources. Every figure is tagged with where it came from.
@@ -59,6 +67,13 @@ One set of skills covers all of them. Each skill reads the playbook for the prop
 - Public research uses Claude's own web search when your Claude setup allows it. Without web access the skills still run and say what they could not check.
 - Rent rolls and similar documents can contain personal data. The skills read it to do the analysis and do not store it or send it anywhere.
 - Your buy box, deal log and outputs stay in your own workspace.
+
+## Troubleshooting
+
+- **A skill does not start.** Name the task in plain words, such as "screen this deal", or ask Claude which skills it has from this plugin.
+- **Claude asks for your criteria every time.** Ask it to set up your buy box once. It saves the file and reads it on later runs.
+- **A workbook shows a failed check.** Ask Claude to audit the workbook and list what failed and where.
+- **Public research is missing.** Web access may be off in your Claude settings. The skills say what they could not check.
 
 ## Limits
 
@@ -88,7 +103,11 @@ Built and maintained by Chi Hathiramani (Chirag Hathiramani), founder of CH Cons
 - Website: https://chiraghathiramani.com
 - Email: chi@chiraghathiramani.com
 
-For help tailoring the plugin to your firm, setting up your buy box, or connecting your systems, get in touch.
+Questions about setup or how a skill works are welcome.
+
+## Privacy and security
+
+See `PRIVACY.md`. To report a security concern, email chi@chiraghathiramani.com.
 
 ## License
 
